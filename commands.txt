@@ -1,0 +1,2 @@
+sudo docker buildx build --platform wasi/wasm32 -t mamain-image .
+sudo docker run --rm name=mymain-cont --runtime=io.containerd.wasmedge.v1 --platform=wasi/wasm32 mamain-image
